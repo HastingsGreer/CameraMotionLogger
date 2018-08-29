@@ -3,7 +3,7 @@
 //  CameraMotionLogger
 //
 //  Created by Hastings Greer on 8/29/18.
-//  Copyright © 2018 Hastings Greer. All rights reserved.
+//  Copyright © 2018 Kitware. All rights reserved.
 //
 
 import UIKit
