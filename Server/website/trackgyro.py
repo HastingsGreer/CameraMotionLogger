@@ -1,6 +1,8 @@
 import os
 from flask import Flask, request
 from werkzeug.utils import secure_filename
+import time
+
 app = Flask(__name__)
 
 import pickle, time
@@ -16,5 +18,9 @@ def imageupload(name):
 	out.write(request.data)
 	out.close()
 	return ''
+
+@app.route('/time')
+def time_():
+	return str(time.time())
 
 app.run(host='0.0.0.0', port=80)
